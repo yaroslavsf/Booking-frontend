@@ -12,7 +12,7 @@ root.render(
       <Route path="/" element={<Rooms/>}/>  
       <Route path="/rooms" element={<Rooms/>}/>  
       <Route path="/bookings" element={<Bookings/>}>
-        {/* <Route path=":roomId" element={Booking}></Route> */}
+        <Route path=":roomId" element={<Bookings/>}></Route>
       </Route>  
     </Routes> 
   </BrowserRouter>
