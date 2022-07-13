@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Rooms from './components/Rooms';
 import Bookings from './components/Bookings';
+import Login from './components/Login';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
@@ -13,7 +15,8 @@ root.render(
       <Route path="/rooms" element={<Rooms/>}/>  
       <Route path="/bookings" element={<Bookings/>}>
         <Route path=":roomId" element={<Bookings/>}></Route>
-      </Route>  
+      </Route> 
+      <Route path="/login" element={<Login/>}/> 
     </Routes> 
   </BrowserRouter>
 );

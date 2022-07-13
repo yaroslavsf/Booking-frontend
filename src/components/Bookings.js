@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
-
 const Bookings = () => {
     //states for changing some values to submit the form
     const { roomId } = useParams();

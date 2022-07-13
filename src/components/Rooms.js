@@ -15,7 +15,7 @@ const Rooms = () => {
     if (rooms === null) return <div>Loading</div>;
     
     return (
-        <table>
+        <table className="table table-striped table-bordered">
            <thead>
                 <tr>
                     <th>Name</th>
@@ -28,7 +28,7 @@ const Rooms = () => {
                 <tr key={r.id}>
                     <td>{r.name}</td>
                     <td>{r.maxVisitorsCount}</td>   
-                    <td><Link to = {`/bookings/${r.id}`}>qwe</Link></td> 
+                    <td><Link className="btn btn-primary" to = {`/bookings/${r.id}`}>Book</Link></td> 
                 </tr>
                     ))}
             </tbody>
